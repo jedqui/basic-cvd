@@ -281,3 +281,26 @@ color:#ffffff;
 .btn.bg--primary{
   background:#ffa700;
 }
+/* kuntinir */
+.kuntinir{max-width:120rem;
+  margin:0 auto;
+  padding: 1.5rem;
+}
+/* bading */
+.bading{
+  padding-top: 13rem;
+  padding-bottom: 10rem;
+  background:#ffffff;
+}
+.bading .bading__rapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items: center;
+  gap:5rem;
+}
+.bading .bading__t h1{
+  font-size: 5rem;
+  font-weight: 500px;;
+  color:#ffa700;
+  line-height: 5rem;;
+}
