@@ -281,26 +281,65 @@ color:#ffffff;
 .btn.bg--primary{
   background:#ffa700;
 }
-/* kuntinir */
-.kuntinir{max-width:120rem;
-  margin:0 auto;
-  padding: 1.5rem;
+/* aboutme */
+.aboutme{
+  padding-top: 10rem;
 }
-/* bading */
-.bading{
+.aboutme .aboutme__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5rem;
+}
+.aboutme .aboutme__wrapper > :nth-child(1){
+  order: 2;
+}
+.aboutme .aboutme__wrapper > :nth-child(2){
+  order: 1;
+}
+.aboutme .aboutme__text h5{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffa700;
+  line-height: 1;
+}
+.aboutme .aboutme__text p{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+/* mobile view */
+.aboutme{
   padding-top: 13rem;
   padding-bottom: 10rem;
   background:#ffffff;
 }
-.bading .bading__rapper{
+.aboutme .aboutme__wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
   align-items: center;
   gap:5rem;
 }
-.bading .bading__t h1{
-  font-size: 5rem;
-  font-weight: 500px;;
-  color:#ffa700;
-  line-height: 5rem;;
+@media screen and (max-width:500px){
+  .aboutme{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .aboutme .aboutme__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .aboutme .aboutme__text{
+    order:2;
+  }
+  .aboutme .aboutme__text h5{
+    font-size:2.5rem;
+    text-align:center;
+
+  }
+  .aboutme img{
+    width:20rem;
+    margin:0 auto;
+  }
 }
