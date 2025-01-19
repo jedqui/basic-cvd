@@ -364,6 +364,7 @@ text-align: justify;
 /* FREE */
 .free{
   background:#ffa700;
+  padding: 5rem 0;
   
 }
 .free .free__wrapper{
@@ -420,13 +421,17 @@ text-align: justify;
   display: flex;
   align-items: center;
 }
-@media screen and (max-width:500px){
-  .footer .footer__wrapper{
-    display:flex;
-    flex-direction:row;
-  }
-  }
 
+/* FOOTER MV */
+@media screen and (max-width:500px){
+.footer .footer__wrapper{
+  display:flex;
+  flex-direction: column;
+}
+.footer .footer__wrapper ul{
+  padding-top: 1.5rem;
+}
+}
 /* repeatable patern */
 .btn{
   display:inline-block;
