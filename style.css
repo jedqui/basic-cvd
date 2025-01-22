@@ -665,7 +665,8 @@ font-size:3.5rem;
   padding-bottom: 10rem;
   padding-left:30rem;
   padding-right: 30rem;
-  background:#2b2b2b
+  background:#2b2b2b;
+  justify-items: center;
 }
 
 .srvcb .srvcb__text h1{
@@ -733,5 +734,204 @@ color: #ffffff;
 .srvcb:nth-child(odd) .srvcb__text{
  padding-left: 15rem;
 }
+.srvcb:last-child .arrow{
+display: none;
+}
 
+/* UPDATE */
 
+  
+  /* Main Content */
+  .box{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+  }
+  .main-content {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-top:20rem
+  }
+  
+  .main-content h1 {
+    font-size: 37px;
+    color:#ffa700;
+    margin-bottom: 10px;
+    font-weight: 780;
+  }
+  
+  .main-content p {
+    margin-bottom: 6rem;
+  
+  }
+  
+  .post {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  /* Styling for the post information container */
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between items */
+  font-size: 14px;
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+}
+
+/* Each item (author, date, tag) */
+.post-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+/* Icons styling */
+.post-info span i {
+  font-size: 16px;
+    color: #555; 
+}
+  
+  .post img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+.post-title {
+    font-size: 25px;
+    color: #ffa700;
+    margin-bottom: 3rem;
+  }
+  
+  .post-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .post a {
+    text-decoration: none;
+    color: #ffa700;
+    padding-bottom: 5rem;
+  }
+  
+  .post a:hover {
+    text-decoration: underline;
+    padding-top: 3rem;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #2b2b2b(0, 0, 0, 0.1);
+    padding-top: 30rem;
+  }
+  
+  /* Title styling */
+.recent-post h2 {
+    color:#ffa700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Post items */
+  .post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5rem
+  }
+  .post-item h3{
+    text-decoration: bold;
+  }
+  .post-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+  }
+  
+  .post-item-content {
+    flex: 1;
+  }
+  
+  /* Post title */
+  .post-item-content h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .post-item-content h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .recent-post{
+    padding-top:10rem
+  }
+  /* Post date */
+  .post-item-content p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #888;
+  }
+  .categories h3{
+    color: #ffa700;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    font-weight: 600;
+  }
+
+.numbers .categories ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+padding-left: 6rem;
+margin-bottom: 30px;
+}
+
+  
+
+  .categories ul,
+  .recent-posts ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories li,
+  .recent-posts li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .sidebar .recent-posts {
+    padding-top: 25rem;
+  }
+  .sidebar .tags h3{
+    padding-top:7rem;
+    padding-bottom: 2rem;
+    color:#ffa700;
+  }
+  .tags span {
+    display: inline-block;
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #2b2b2b ;
+    cursor: pointer;
+   
+  }
+  .tags span:hover {
+  background: #2b2b2b;
+    color: #ffffff;
+  }
+  
