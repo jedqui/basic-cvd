@@ -870,7 +870,8 @@ display: none;
   .post-item-content h3 {
     font-size: 14px;
     margin: 0;
-    color: #333;
+    color: #2b2b2b;
+    font-weight: bold;
   }
   
   .post-item-content h3:hover {
@@ -1035,3 +1036,4 @@ font-size: 16px;
 .form-container button:hover{
   scale: 1.1;
 }
+
