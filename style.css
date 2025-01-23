@@ -938,15 +938,15 @@ display: none;
     font-weight: bold;
   }
   .tags span {
-    display: inline-block;
+    display: inline-table;
     background: #f4f4f4;
     margin: 5px;
-    padding: 12px 16px;
+    padding: 14px 20px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     color: #2b2b2b ;
     cursor: pointer;
-    
+    border: #2b2b2b solid;
   }
   .tags span:hover {
   background: #2b2b2b;
