@@ -756,7 +756,7 @@ display: none;
   }
   
   .main-content h1 {
-    font-size: 37px;
+    font-size: 4rem;
     color:#ffa700;
     margin-bottom: 10px;
     font-weight: 780;
@@ -792,7 +792,8 @@ display: none;
 /* Icons styling */
 .post-info span i {
   font-size: 16px;
-    color: #555; 
+    color:#2b2b2b; 
+    text-decoration: bold;
 }
   
   .post img {
@@ -839,6 +840,7 @@ display: none;
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-weight: bold;
   }
   
   /* Post items */
@@ -884,27 +886,41 @@ display: none;
     font-size: 12px;
     color: #888;
   }
-  .categories h3{
-    color: #ffa700;
-    font-size: 2rem;
-    padding-bottom: 3rem;
-    font-weight: 600;
+  .categories{
+    padding-bottom: 6rem;
   }
-
-.numbers .categories ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-padding-left: 6rem;
-margin-bottom: 30px;
-}
-
+  .categories h3 {
+        color: #ffa700;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+    }
+    
+    .categories ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+    .categories li {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px;
+  }
+    
+    .categories li:last-child {
+        border-bottom: none;
+    }
   
-
-  .categories ul,
-  .recent-posts ul {
-    list-style: none;
-    padding: 0;
-  }
+    .categories li span {
+      color: #333;
+        font-size: 14px;
+    }
   
   .categories li,
   .recent-posts li {
@@ -914,10 +930,11 @@ margin-bottom: 30px;
   .sidebar .recent-posts {
     padding-top: 25rem;
   }
-  .sidebar .tags h3{
+  .sidebar .tags h2{
     padding-top:7rem;
     padding-bottom: 2rem;
     color:#ffa700;
+    font-weight: bold;
   }
   .tags span {
     display: inline-block;
@@ -928,10 +945,93 @@ margin-bottom: 30px;
     font-size: 14px;
     color: #2b2b2b ;
     cursor: pointer;
-   
+    
   }
   .tags span:hover {
   background: #2b2b2b;
     color: #ffffff;
+    background-color: #2b2b2b;
+  }
+  .tags{
+    padding-top: 3rem;
+    
   }
   
+  /* contact */
+  .contact-section {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #2b2b2b;
+  }
+.contact-section h1{
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffa700;
+  margin-bottom: 5rem;
+  padding-top: 13rem;
+}
+
+.contact-section p{
+  margin-bottom: 5rem;
+  max-width: 50rem;
+}
+.contact-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-info ul li{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-info ul li i{
+color: #ffa700;
+font-size: 2rem;
+}
+.contact-info{
+  font-size: 12px;
+}
+
+/* form */
+.contact-section .form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-section .contact__wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-container input,
+.form-container textarea{
+  width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: none;
+border-radius: 5px;
+background-color: #ffffff;
+color: #ffffff;
+font-size: 12px;
+}
+.contact-social ul {
+  display: flex;
+  margin-top: 5rem;
+}
+.contact-social i{
+  color: #ffffff;
+  padding:8px;
+  font-size: 20px;
+}
+.form-container button{
+  padding: 15px 20px;
+  background-color: #ffa700;
+  border: none;
+  border-radius: 25px;
+cursor: pointer;
+color: #ffffff;
+font-size: 16px;
+}
+.form-container button:hover{
+  scale: 1.1;
+}
